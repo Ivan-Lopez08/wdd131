@@ -26,6 +26,7 @@ header span{
 nav {
     display: flex;
     background-color: rgb(43, 43, 43);
+    justify-content: space-around;
 }
 
 nav a {
@@ -40,8 +41,7 @@ nav a:hover{
 }
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    justify-content: space-around;
+    grid-template-columns: 2fr 1fr;  
     max-width: 1000px;
 }
 
