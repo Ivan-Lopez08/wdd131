@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* Header element */
+header, footer{
+    background-color: rgb(16, 16, 122);
+    padding: 1rem;
+    color: white;
+}
+
+header{
+    display: flex;
+}
+
+header p {
+    font-size: 2rem;
+}
+
+/* Main Elements */
+main{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+h1 {
+    grid-row: 0;
+    margin: 2rem;
+    text-align: center;
+}
+
+.pictureContainer {
+    grid-column: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    max-width: 300px;
+    min-width: 200px;
+}
+
+/* Footer Elements */
+footer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.modification{
+    display: flex;
+    justify-content: center;
+}
