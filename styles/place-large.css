@@ -1,0 +1,38 @@
+@media screen and (min-width: 1000px){
+    body{
+        max-width: 1400px;
+    }
+
+    .mainImgContainer{
+        position: relative;
+    }
+
+    .card{
+        background-color: wheat;
+        padding: 1rem;
+        opacity: 0.8;
+        border-radius: 8px;
+        box-shadow: 0 0 20px 5px black;
+        position: absolute;
+    }
+
+    .dataSection{
+        top: 3rem;  
+        left: 1rem;
+        width: fit-content;
+    }
+
+    .weatherSection{
+        bottom: 2rem;  
+        right: 1rem;
+        max-width: 300px;
+    }
+
+    .emoji {
+        display: inline;
+    }
+
+    section img{
+        display: none;
+    }
+}

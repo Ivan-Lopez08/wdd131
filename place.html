@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,53 +8,69 @@
     <meta name="author" content="Ivan Lopez">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="scripts/place.js" defer></script>
     <title>Place page</title>
 </head>
+
 <body>
     <header>
         <h1>Japan</h1>
     </header>
     <main>
-        <img src="" alt="">
-        <section>
-            <h2>Data</h2>
-            <ul>
-                <li>
-                    <p><strong>Area:</strong> placeholder</p>
-                </li>
-                <li>
-                    <p><strong>Population:</strong> placeholder</p>
-                </li>
-                <li>
-                    <p><strong>Capital:</strong> placeholder</p>
-                </li>
-                <li>
-                    <p><strong>Languages:</strong> placeholder</p>
-                </li>
-                <li>
-                    <p><strong>Currency:</strong> placeholder</p>
-                </li>
-                <li>
-                    <p><strong>Time Zone:</strong> placeholder</p>
-                </li>
-                <li>
-                    <p><strong>Calling code:</strong> placeholder</p>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Weather</h2>
-        </section>
+        <div class="mainImgContainer">
+            <picture>
+                <source srcset="images/Japan-Wide.jpg" media="(min-width: 1000px)">
+                <img src="images/Japon.jpg" alt="Japan" class="mainImg">
+            </picture>
+
+            <section class="dataSection card">
+                <h2>Data</h2>
+                <strong>Area:</strong>
+                <p>377,975 km²</p>
+                <strong>Population:</strong>
+                <p>123,360,000</p>
+                <strong>Capital:</strong>
+                <p> Tokio</p>
+                <strong>Languages:</strong>
+                <p> Japanese</p>
+                <strong>Currency:</strong>
+                <p> Japanese Yen</p>
+                <strong>Time Zone:</strong>
+                <p> Japan Standard Time(JST)</p>
+                <strong>Calling code:</strong>
+                <p> +81</p>
+                <strong>Internet TLD:</strong>
+                <p> .jp</p>
+            </section>
+            <section class="weatherSection card">
+                <h2>Weather <span class="emoji">🌧️</span></h2>
+                <img src="images/WeatherIcon.svg" alt="Weather icon">
+                <strong>Temperature:</strong>
+                <p id="temperature"></p>
+                <strong>Conditions:</strong>
+                <p id="conditions"></p>
+                <strong>Wind:</strong>
+                <p id="wind"></p>
+                <strong>Wind chill:</strong>
+                <p id="wind-chill"></p>
+            </section>
+        </div>
+
     </main>
     <footer>
         <div class="modification">
-                <p>©<span id="currentyear"></span></p>
-                <p>🎄 Ivan Andres Lopez Mejia 🎄 Honduras</p>
-            </div>
-            <div class="modification">
-                <span>Last modification: </span><p id="lastModified"></p>
-            </div>
+            <p>©<span id="currentyear"></span></p>
+            <p>🎄 Ivan Andres Lopez Mejia 🎄 Honduras</p>
+        </div>
+        <div class="modification">
+            <span>Last modification: </span>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 </body>
+
 </html>
