@@ -1,0 +1,16 @@
+@media (min-width: 37.5em) {
+    #burguer {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        align-items: center;  
+        margin-left: auto;                   
+    }
+
+    .navigation a {
+        display: block;
+        flex: 0 0 auto;
+    }
+}
