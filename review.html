@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews count</title>
+</head>
+<body>
+    <p>You have submitted <span id="reviewCount"></span> reviews.</p>
+</body>
+</html>
+<script>
+    let count = localStorage.getItem("reviewCount");
+    if(!count){
+        count = 0;
+    }
+    count = parseInt(count);
+    count ++;
+
+    localStorage.setItem("reviewCount", count);
+
+    document.getElementById("reviewCount").textContent = count;
+</script>

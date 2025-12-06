@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product review form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header class="edge">
+        <h1>
+            Product review
+        </h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <div class="section">
+                <label for="product">Product Name</label>
+                <select class="inputfield" id="product" name="product" required>
+                    <option selected disabled>Choose a product...</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <p>Overall Rating</p>
+                <div class="radio-buttons">
+                    <Label><input required id="rating1" type="radio" name="rating" value="1">⭐</Label>
+                    <Label><input required id="rating2" type="radio" name="rating" value="2">⭐⭐</Label>
+                    <Label><input required id="rating3" type="radio" name="rating" value="3">⭐⭐⭐</Label>
+                    <Label><input required id="rating4" type="radio" name="rating" value="4">⭐⭐⭐⭐</Label>
+                    <Label><input required id="rating5" type="radio" name="rating" value="1">⭐⭐⭐⭐⭐</Label>
+                </div>
+            </div>
+
+            <div class="section">
+                <label for="installation-date">Date of installation</label>
+                <input class="inputfield" type="date" id="installation-date" name="installation-date" required>
+            </div>
+
+            <div class="section">
+                <label>Which features did you find useful in the product? (Check all that apply)</label>
+                <label><input type="checkbox" id="useful-durability" name="useful-durability"
+                        value="Durability">Durability</label>
+                <label><input type="checkbox" id="useful-ease" name="useful-ease" value="Ease">Ease to use</label>
+                <label><input type="checkbox" id="useful-performance" name="useful-performance"
+                        value="Performance">Performance</label>
+                <label><input type="checkbox" id="useful-design" name="useful-design" value="Design">Design</label>
+            </div>
+
+            <div class="section textarea">
+                <label for="review">Written review (Optional)</label>
+            <textarea class="inputfield" id="review" name="review"></textarea>
+            </div>
+            
+            <div class="section">
+                <label for="name">Your Name (Optional)</label>
+                <input class="inputfield" type="text" id="name" name="name">
+            </div>
+            
+            
+            <input class="button" type="submit" value="Submit Form">
+        </form>
+    </main>
+    <footer class="edge">
+        <div class="modification">
+            <p>©<span id="currentyear"></span></p>
+            <p>🎄 Ivan Andres Lopez Mejia 🎄 Honduras</p>
+        </div>
+        <div class="modification">
+            <span>Last modification: </span>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
