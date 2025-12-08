@@ -27,6 +27,7 @@ header {
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto auto;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 header img {
@@ -83,7 +84,7 @@ nav a{
 
 .callToAction h2 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .callToAction a {
@@ -121,7 +122,7 @@ nav a{
 
 .card-container section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 20px #4CAF50;
 }
 
 .card-container section img {
