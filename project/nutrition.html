@@ -1,108 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Workouts page for the wellness path website">
-    <meta name="author" content="Ivan Lopez">
-    <title>Workouts</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/index.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WellnessPath - Nutrition</title>
+  <link rel="stylesheet" href="styles/index.css">
 </head>
-
 <body>
-    <header>
-        <img src="images/logo.jpg" alt="logo">
-        <h1>WELLNESSPATH-BASICS</h1>
+  <header>
+    <img src="images/logo.jpg" alt="logo">
+    <h1>WELLNESSPATH-BASICS</h1>
 
-        <button class="hamburger" id="hamburgerBtn" type="button" aria-controls="mobileMenu" aria-expanded="false"
-            aria-label="Abrir menú">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+    <button class="hamburger" id="hamburgerBtn" type="button"
+            aria-controls="mobileMenu" aria-expanded="false" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
 
-        <nav id="mobileMenu">
-            <a href="index.html">Home</a>
-            <a href="workouts.html">Workouts</a>
-            <a href="nutrition.html">Nutrition</a>
-        </nav>
-    </header>
+    <nav id="mobileMenu" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="workouts.html">Workouts</a>
+      <a href="nutrition.html">Nutrition</a>
+    </nav>
+  </header>
 
-    <main class="nutritionPage">
+  <main class="nutritionPage">
+    <section class="nutrition-hero">
+      <h1>Eat Better, Feel Better</h1>
+      <p>Find healthy meals, balanced diets, and the guidance you need to fuel your goals.</p>
+    </section>
 
-        <!-- HERO -->
-        <section class="nutrition-hero">
-            <h1>Eat Better, Feel Better</h1>
-            <p>Find healthy meals, balanced diets, and the guidance you need to fuel your goals.</p>
-        </section>
+    <section class="nutrition-cards-section">
+      <h2 class="section-title">Nutrition Categories</h2>
+      <div class="nutrition-cards">
+        <article class="nutrition-card">
+          <img src="images/Nutrition_Images/nutrition_option1.jpeg" alt="Healthy Recipes" loading="lazy">
+          <h3>Healthy Recipes</h3>
+          <p>Explore simple, nutritious meals you can prepare at home.</p>
+          <a href="signup.html" class="card-btn">Explore</a>
+        </article>
 
-        <!-- CATEGORY CARDS -->
-        <section class="nutrition-cards-section">
-            <h2 class="section-title">Nutrition Categories</h2>
+        <article class="nutrition-card">
+          <img src="images/Nutrition_Images/nutrition_option4.jpg" alt="Meal Plans" loading="lazy">
+          <h3>Meal Plans</h3>
+          <p>Follow structured meal plans designed for different fitness goals.</p>
+          <a href="signup.html" class="card-btn">Explore</a>
+        </article>
 
-            <div class="nutrition-cards">
-                <article class="nutrition-card">
-                    <img src="images/Nutrition_Images/nutrition_option1.jpeg" alt="Healthy Recipes">
-                    <h3>Healthy Recipes</h3>
-                    <p>Explore simple, nutritious meals you can prepare at home.</p>
-                    <a href="">Explore</a>
-                </article>
+        <article class="nutrition-card">
+          <img src="images/Nutrition_Images/nutrition_option6.jpg" alt="Tips & Guidance" loading="lazy">
+          <h3>Tips & Guidance</h3>
+          <p>Learn how to improve your eating habits with easy adjustments.</p>
+          <a href="signup.html" class="card-btn">Explore</a>
+        </article>
+      </div>
+    </section>
 
-                <article class="nutrition-card">
-                    <img src="images/Nutrition_Images/nutrition_option3.jpeg" alt="Meal Plans">
-                    <h3>Meal Plans</h3>
-                    <p>Follow structured meal plans designed for different fitness goals.</p>
-                    <a href="">Explore</a>
-                </article>
+    <section class="featured-nutrition">
+      <img src="images/Nutrition_Images/nutrition_option5.webp" alt="Featured Meal" loading="lazy">
+      <div class="featured-content">
+        <h2>Featured Meal of the Week</h2>
+        <p>Try this delicious, nutritious meal packed with flavor and perfect for boosting your energy.</p>
+        <a href="signup.html" class="cta-btn">Try Now</a>
+      </div>
+    </section>
 
-                <article class="nutrition-card">
-                    <img src="images/Nutrition_Images/nutrition_option4.jpeg" alt="Tips & Guidance">
-                    <h3>Tips & Guidance</h3>
-                    <p>Learn how to improve your eating habits with easy adjustments.</p>
-                    <a href="">Explore</a>
-                </article>
-            </div>
-        </section>
+    <section class="calorie-calculator">
+      <h2>Daily Calorie Estimator</h2>
 
-        <!-- FEATURED -->
-        <section class="featured-nutrition">
-            <img src="images/Nutrition_Images/nutrition_option2.jpeg" alt="Featured Meal">
-            <div class="featured-content">
-                <h2>Featured Meal of the Week</h2>
-                <p>
-                    Try this delicious, nutritious meal packed with flavor and perfect for boosting your energy.
-                    Balanced macros and easy to prepare!
-                </p>
-                <a href="" class="cta-btn">Try Now</a>
-            </div>
-        </section>
+      <div class="calc-grid">
+        <label>Weight (kg)
+          <input type="number" id="weight" placeholder="e.g. 70">
+        </label>
 
-        <!-- CTA -->
-        <section class="cta-nutrition-page">
-            <h2>Ready to Improve Your Diet?</h2>
-            <a href="" class="cta-btn">Start Your Meal Plan</a>
-        </section>
-    </main>
+        <label>Height (cm)
+          <input type="number" id="height" placeholder="e.g. 175">
+        </label>
 
+        <label>Age
+          <input type="number" id="age" placeholder="e.g. 30">
+        </label>
 
-    <footer>
-        <div class="modification">
-            <p>©<span id="currentyear"></span></p>
-            <p>🎄 Ivan Andres Lopez Mejia 🎄 Honduras</p>
-        </div>
-        <div class="modification">
-            <span>Last modification: </span>
-            <p id="lastModified"></p>
-        </div>
-    </footer>
+        <label>Activity Level
+          <select id="activity">
+            <option value="1.2">Sedentary</option>
+            <option value="1.375">Lightly active</option>
+            <option value="1.55">Moderately active</option>
+            <option value="1.725">Very active</option>
+            <option value="1.9">Extra active</option>
+          </select>
+        </label>
+      </div>
 
+      <div class="calc-actions">
+        <button id="calcBtn" class="card-btn">Calculate</button>
+        <p id="calorieResult" class="calorie-output">—</p>
+      </div>
+    </section>
+
+    <section class="cta-nutrition-page">
+      <h2>Ready to Improve Your Diet?</h2>
+      <a href="signup.html" class="cta-btn">Start Your Meal Plan</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="modification">
+      <p>©<span id="currentyear"></span></p>
+      <p>🎄 Ivan Andres Lopez Mejia 🎄 Honduras</p>
+    </div>
+    <div class="modification">
+      <span>Last modification: </span>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+  <script src="scripts/index.js" defer></script>
 </body>
-
 </html>

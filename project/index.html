@@ -2,97 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Main page for the wellness path website">
-    <meta name="author" content="Ivan Lopez">
-    <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/index.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WellnessPath - Home</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.jpg" alt="logo">
-        <h1>WELLNESSPATH-BASICS</h1>
+  <header>
+    <img src="images/logo.jpg" alt="logo" loading="lazy">
+    <h1>WELLNESSPATH-BASICS</h1>
 
-        <button class="hamburger" id="hamburgerBtn" type="button" aria-controls="mobileMenu" aria-expanded="false"
-            aria-label="Abrir menú">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+    <button class="hamburger" id="hamburgerBtn" type="button" aria-controls="mobileMenu" aria-expanded="false"
+      aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
 
-        <nav id="mobileMenu">
-            <a href="index.html">Home</a>
-            <a href="workouts.html">Workouts</a>
-            <a href="nutrition.html">Nutrition</a>
-        </nav>
-    </header>
-    <main>
+    <nav id="mobileMenu" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="workouts.html">Workouts</a>
+      <a href="nutrition.html">Nutrition</a>
+    </nav>
+  </header>
 
-    <!-- HERO SECTION -->
+  <main>
     <section class="home-hero">
-        <div class="hero-text">
-            <h2>Your Wellness Journey Starts Here</h2>
-            <p>Build strength, eat smarter, and elevate your lifestyle with simple daily habits.</p>
-            <a href="workouts.html" class="cta-btn">Start Now</a>
-        </div>
+      <div class="hero-text">
+        <h2>Your Wellness Journey Starts Here</h2>
+        <p>Build strength, eat smarter, and elevate your lifestyle with simple daily habits.</p>
+        <a href="signup.html" class="cta-btn">Start Now</a>
+      </div>
     </section>
 
-    <!-- OVERVIEW CARDS -->
+    <section class="home-meta">
+      <div class="daily-tip">
+        <h2>Daily Wellness Tip</h2>
+        <p id="tipText">Cargando tip...</p>
+        <button id="newTipBtn" class="small-btn">New Tip</button>
+      </div>
+
+      <div class="favorites-preview">
+        <h2>Your Favorites</h2>
+        <div id="favoritesList">
+        </div>
+        <a href="workouts.html" class="card-btn">Manage Favorites</a>
+      </div>
+    </section>
+
     <section class="home-overview">
-        <h2 class="section-title">Explore Your Path</h2>
+      <h2 class="section-title">Explore Your Path</h2>
 
-        <div class="overview-grid">
-
-            <div class="overview-card">
-                <img src="images/Workout_images/workout_option1.jpeg" alt="Workouts">
-                <h3>Workouts</h3>
-                <p>Discover personalized routines to build strength, improve mobility, and stay active.</p>
-                <a href="workouts.html" class="card-btn">Explore</a>
-            </div>
-
-            <div class="overview-card">
-                <img src="images/Nutrition_Images/nutrition_option1.jpeg" alt="Nutrition">
-                <h3>Nutrition</h3>
-                <p>Learn how to fuel your body with balanced meals that support your wellness goals.</p>
-                <a href="nutrition.html" class="card-btn">Explore</a>
-            </div>
-
-            <div class="overview-card">
-                <img src="images/Nutrition_Images/nuntrition_option2.jpeg" alt="Useful Tips">
-                <h3>Useful Tips</h3>
-                <p>Stay motivated with easy-to-follow advice for improving your daily habits.</p>
-                <a href="#" class="card-btn">Explore</a>
-            </div>
-
+      <div class="overview-grid">
+        <div class="overview-card">
+          <img src="images/Workout_images/workout_option1.jpeg" alt="Workouts" loading="lazy">
+          <h3>Workouts</h3>
+          <p>Discover personalized routines to build strength, improve mobility, and stay active.</p>
+          <a href="signup.html" class="card-btn">Explore</a>
         </div>
+
+        <div class="overview-card">
+          <img src="images/Nutrition_Images/nutrition_option1.jpeg" alt="Nutrition" loading="lazy">
+          <h3>Nutrition</h3>
+          <p>Learn how to fuel your body with balanced meals that support your wellness goals.</p>
+          <a href="signup.html" class="card-btn">Explore</a>
+        </div>
+
+        <div class="overview-card">
+          <img src="images/Nutrition_Images/nuntrition_option2.jpeg" alt="Useful Tips" loading="lazy">
+          <h3>Useful Tips</h3>
+          <p>Stay motivated with easy-to-follow advice for improving your daily habits.</p>
+          <a href="signup.html" class="card-btn">Explore</a>
+        </div>
+      </div>
     </section>
 
-    <!-- FINAL CTA -->
     <section class="home-final-cta">
-        <h2>Ready to Transform Your Lifestyle?</h2>
-        <p>Your health journey is unique — start shaping it today.</p>
-        <a href="nutrition.html" class="cta-btn">Begin Now</a>
+      <h2>Ready to Transform Your Lifestyle?</h2>
+      <p>Your health journey is unique, start shaping it today.</p>
+      <a href="signup.html" class="cta-btn">Begin Now</a>
     </section>
+  </main>
 
-</main>
-    <footer>
-        <div class="modification">
-            <p>©<span id="currentyear"></span></p>
-            <p>🎄 Ivan Andres Lopez Mejia 🎄 Honduras</p>
-        </div>
-        <div class="modification">
-            <span>Last modification: </span>
-            <p id="lastModified"></p>
-        </div>
-    </footer>
+  <footer>
+    <div class="modification">
+      <p>©<span id="currentyear"></span></p>
+      <p>🎄 Ivan Andres Lopez Mejia 🎄 Honduras</p>
+    </div>
+    <div class="modification">
+      <span>Last modification: </span>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
 </body>
 
 </html>

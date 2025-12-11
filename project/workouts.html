@@ -2,102 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Workouts page for the wellness path website">
-    <meta name="author" content="Ivan Lopez">
-    <title>Workouts</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/index.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WellnessPath - Workouts</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.jpg" alt="logo">
-        <h1>WELLNESSPATH-BASICS</h1>
+  <header>
+    <img src="images/logo.jpg" alt="logo" loading="lazy">
+    <h1>WELLNESSPATH-BASICS</h1>
 
-        <button class="hamburger" id="hamburgerBtn" type="button" aria-controls="mobileMenu" aria-expanded="false"
-            aria-label="Abrir menú">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+    <button class="hamburger" id="hamburgerBtn" type="button" aria-controls="mobileMenu" aria-expanded="false"
+      aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
 
-        <nav id="mobileMenu">
-            <a href="index.html">Home</a>
-            <a href="workouts.html">Workouts</a>
-            <a href="nutrition.html">Nutrition</a>
-        </nav>
-    </header>
+    <nav id="mobileMenu" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="workouts.html">Workouts</a>
+      <a href="nutrition.html">Nutrition</a>
+    </nav>
+  </header>
 
-    <main class="workoutsPage">
-        <section class="workouts-hero">
-            <h1>Find the Perfect Workout for You</h1>
-            <p>From strength to cardio, explore routines designed for all levels.</p>
-        </section>
+  <main class="workoutsPage">
+    <section class="workouts-hero">
+      <h1>Find the Perfect Workout for You</h1>
+      <p>From strength to cardio, explore routines designed for all levels.</p>
+    </section>
 
-        <section class="workout-cards-section">
-            <h2 class="section-title">Workout Categories</h2>
+    <section class="workout-cards-section">
+      <h2 class="section-title">Workout Categories</h2>
 
-            <div class="workout-cards">
-                <article class="workout-card">
-                    <img src="images/Workout_images/workout_option4.jpg" alt="Strength Training">
-                    <h3>Strength Training</h3>
-                    <p>Build muscle mass, improve endurance, and increase overall strength.</p>
-                    <a href="">Explore</a>
-                </article>
+      <div class="workout-cards">
+        <article class="workout-card">
+          <img src="images/Workout_images/workout_option4.jpg" alt="Strength Training" loading="lazy">
+          <h3>Strength Training</h3>
+          <p>Build muscle mass, improve endurance, and increase overall strength.</p>
+          <div class="card-actions">
+            <a href="signup.html" class="card-btn">Explore</a>
+            <button class="fav-btn" data-title="Strength Training">❤️ Add to Favorites</button>
+          </div>
+        </article>
 
-                <article class="workout-card">
-                    <img src="images/Workout_images/workout_option2.jpg" alt="Cardio Workouts">
-                    <h3>Cardio Workouts</h3>
-                    <p>Boost your metabolism and improve your cardiovascular health.</p>
-                    <a href="">Explore</a>
-                </article>
+        <article class="workout-card">
+          <img src="images/Workout_images/workout_option2.jpg" alt="Cardio Workouts" loading="lazy">
+          <h3>Cardio Workouts</h3>
+          <p>Boost your metabolism and improve your cardiovascular health.</p>
+          <div class="card-actions">
+            <a href="signup.html" class="card-btn">Explore</a>
+            <button class="fav-btn" data-title="Cardio Workouts">❤️ Add to Favorites</button>
+          </div>
+        </article>
 
-                <article class="workout-card">
-                    <img src="images/Workout_images/workout_option1.jpeg" alt="Yoga & Flexibility">
-                    <h3>Yoga & Flexibility</h3>
-                    <p>Increase mobility, reduce stress, and improve body balance.</p>
-                    <a href="">Explore</a>
-                </article>
-            </div>
-        </section>
+        <article class="workout-card">
+          <img src="images/Workout_images/workout_option1.jpeg" alt="Yoga & Flexibility" loading="lazy">
+          <h3>Yoga & Flexibility</h3>
+          <p>Increase mobility, reduce stress, and improve body balance.</p>
+          <div class="card-actions">
+            <a href="signup.html" class="card-btn">Explore</a>
+            <button class="fav-btn" data-title="Yoga & Flexibility">❤️ Add to Favorites</button>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <section class="featured-workout">
-            <img src="images/Workout_images/workout_option3.jpeg" alt="Featured Workout">
-            <div class="featured-content">
-                <h2>Featured Workout of the Week</h2>
-                <p>
-                    Try this full-body routine designed to push your limits and help you achieve maximum results.
-                    No equipment needed, perfect for home training.
-                </p>
-                <a href="" class="cta-btn">Start Now</a>
-            </div>
-        </section>
+    <section class="featured-workout">
+      <img src="images/Workout_images/workout_option3.jpeg" alt="Featured Workout" loading="lazy">
+      <div class="featured-content">
+        <h2>Featured Workout of the Week</h2>
+        <p>Try this full-body routine designed to push your limits and help you achieve maximum results.</p>
+        <a href="signup.html" class="cta-btn">Start Now</a>
+      </div>
+    </section>
 
-        <!-- CTA Section -->
-        <section class="cta-workout-page">
-            <h2>Ready to Transform Your Body?</h2>
-            <a href="" class="cta-btn">Join a Workout Plan</a>
-        </section>
-    </main>
+    <section class="cta-workout-page">
+      <h2>Ready to Transform Your Body?</h2>
+      <a href="signup.html" class="cta-btn">Join a Workout Plan</a>
+    </section>
+  </main>
 
-    <footer>
-        <div class="modification">
-            <p>©<span id="currentyear"></span></p>
-            <p>🎄 Ivan Andres Lopez Mejia 🎄 Honduras</p>
-        </div>
-        <div class="modification">
-            <span>Last modification: </span>
-            <p id="lastModified"></p>
-        </div>
-    </footer>
-
+  <footer>
+    <div class="modification">
+      <p>©<span id="currentyear"></span></p>
+      <p>🎄 Ivan Andres Lopez Mejia 🎄 Honduras</p>
+    </div>
+    <div class="modification">
+      <span>Last modification: </span>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
 </body>
 
 </html>
