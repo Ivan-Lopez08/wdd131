@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>WellnessPath - Workouts</title>
-  <link rel="stylesheet" href="styles/index.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Ivan Lopez">
+    <meta name="description" content="Sign up page for the wellnessPath website">
+    <title>WellnessPath - Sign Up</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
 </head>
+
 <body>
-  <header>
-    <img src="images/logo.jpg" alt="logo">
-    <h1>WELLNESSPATH-BASICS</h1>
+    <header>
+        <img src="images/logo.jpg" alt="logo">
+        <h1>WELLNESSPATH-BASICS</h1>
 
-    <button class="hamburger" id="hamburgerBtn" type="button"
-            aria-controls="mobileMenu" aria-expanded="false" aria-label="Abrir menú">
-      <span></span><span></span><span></span>
-    </button>
+        <button class="hamburger" id="hamburgerBtn" type="button" aria-controls="mobileMenu" aria-expanded="false"
+            aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </button>
 
-    <nav id="mobileMenu" aria-hidden="true">
-      <a href="index.html">Home</a>
-      <a href="workouts.html">Workouts</a>
-      <a href="nutrition.html">Nutrition</a>
-    </nav>
-  </header>
+        <nav id="mobileMenu" aria-hidden="true">
+            <a href="index.html">Home</a>
+            <a href="workouts.html">Workouts</a>
+            <a href="nutrition.html">Nutrition</a>
+        </nav>
+    </header>
 
-  <main class="signup-page">
-    <section class="signup-hero">
-        <h1>Join WellnessPath</h1>
-        <p>Your journey to a healthier lifestyle starts here.</p>
-    </section>
+    <main class="signup-page">
+        <section class="signup-hero">
+            <h1>Join WellnessPath</h1>
+            <p>Your journey to a healthier lifestyle starts here.</p>
+        </section>
 
-    <section class="signup-form-section">
-        <h2>Create Your Account</h2>
+        <section class="signup-form-section">
+            <h2>Create Your Account</h2>
 
-        <form id="signupForm" class="signup-form">
-            <label>
-                Full Name:
-                <input type="text" id="name" required>
-            </label>
+            <form id="signupForm" class="signup-form">
+                <label>
+                    Full Name:
+                    <input type="text" id="name" required>
+                </label>
 
-            <label>
-                Email Address:
-                <input type="email" id="email" required>
-            </label>
+                <label>
+                    Email Address:
+                    <input type="email" id="email" required>
+                </label>
 
-            <label>
-                Password:
-                <input type="password" id="password" minlength="6" required>
-            </label>
+                <label>
+                    Password:
+                    <input type="password" id="password" minlength="6" required>
+                </label>
 
-            <label>
-                Fitness Goal:
-                <select id="goal" required>
-                    <option value="">Select one...</option>
-                    <option value="lose">Lose Weight</option>
-                    <option value="gain">Gain Muscle</option>
-                    <option value="tone">Tone/Stay Fit</option>
-                </select>
-            </label>
+                <label>
+                    Fitness Goal:
+                    <select id="goal" required>
+                        <option value="">Select one...</option>
+                        <option value="lose">Lose Weight</option>
+                        <option value="gain">Gain Muscle</option>
+                        <option value="tone">Tone/Stay Fit</option>
+                    </select>
+                </label>
 
-            <button type="submit" class="primary-btn">Create Account</button>
-        </form>
+                <button type="submit" class="primary-btn">Create Account</button>
+            </form>
 
-        <p class="form-message" id="formMessage"></p>
-    </section>
-</main>
+            <p class="form-message" id="formMessage"></p>
+        </section>
+    </main>
 
-  <footer>
-    <div class="modification">
-      <p>©<span id="currentyear"></span></p>
-      <p>🎄 Ivan Andres Lopez Mejia 🎄 Honduras</p>
-    </div>
-    <div class="modification">
-      <span>Last modification: </span>
-      <p id="lastModified"></p>
-    </div>
-  </footer>
-
-  <script src="scripts/index.js" defer></script>
+    <footer>
+        <div class="modification">
+            <p>©<span id="currentyear"></span></p>
+            <p>🎄 Ivan Andres Lopez Mejia 🎄 Honduras</p>
+        </div>
+        <div class="modification">
+            <span>Last modification: </span>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
+
 </html>
